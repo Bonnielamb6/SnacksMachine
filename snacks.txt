@@ -1,0 +1,4 @@
+1,Chips,5.0
+2,Coca-Cola,2.0
+3,Sandwich,10.0
+4,chocolate,2.5

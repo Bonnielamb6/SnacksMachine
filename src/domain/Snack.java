@@ -1,17 +1,19 @@
+package domain;
+
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Snack implements Serializable {
-    private static int counterSnacks=0;
+    private static int counterSnacks = 0;
     private int idSnack;
     private String name;
     private double price;
 
-    public Snack(){
+    public Snack() {
         this.idSnack = ++counterSnacks;
     }
 
-    public Snack(String name, double price){
+    public Snack(String name, double price) {
         this();//The constructor call must be the first line
         this.name = name;
         this.price = price;
@@ -48,6 +50,10 @@ public class Snack implements Serializable {
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    public String writeSnack() {
+        return idSnack + "," + name + "," + price;
     }
 
     @Override
